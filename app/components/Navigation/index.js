@@ -68,52 +68,52 @@ function Navigation() {
       <H1HeadingPrimary>JS Documentation</H1HeadingPrimary>
       <UlLinkList>
         <LILinkItem>
-          <RouterLink to="introduction" getProps={isActive}>
+          <RouterLink to="/" getProps={isActive}>
             Introduction
           </RouterLink>
         </LILinkItem>
         <LILinkItem>
-          <RouterLink to="whatyou" getProps={isActive}>
+          <RouterLink to="/whatyou" getProps={isActive}>
             What you should already know
           </RouterLink>
         </LILinkItem>
         <LILinkItem>
-          <RouterLink to="javascript-java" getProps={isActive}>
+          <RouterLink to="/javascript-java" getProps={isActive}>
             JavaScript and Java
           </RouterLink>
         </LILinkItem>
         <LILinkItem>
-          <RouterLink to="hello-world" getProps={isActive}>
+          <RouterLink to="/hello-world" getProps={isActive}>
             Hello World
           </RouterLink>
         </LILinkItem>
         <LILinkItem>
-          <RouterLink to="variables" getProps={isActive}>
+          <RouterLink to="/variables" getProps={isActive}>
             Variables
           </RouterLink>
         </LILinkItem>
         <LILinkItem>
-          <RouterLink to="declaring-var" getProps={isActive}>
+          <RouterLink to="/declaring-var" getProps={isActive}>
             Declaring variables
           </RouterLink>
         </LILinkItem>
         <LILinkItem>
-          <RouterLink to="variable-scope" getProps={isActive}>
+          <RouterLink to="/variable-scope" getProps={isActive}>
             Variable Scope
           </RouterLink>
         </LILinkItem>
         <LILinkItem>
-          <RouterLink to="global-var" getProps={isActive}>
+          <RouterLink to="/global-var" getProps={isActive}>
             Global variables
           </RouterLink>
         </LILinkItem>
         <LILinkItem>
-          <RouterLink to="constants" getProps={isActive}>
+          <RouterLink to="/constants" getProps={isActive}>
             Constants
           </RouterLink>
         </LILinkItem>
         <LILinkItem>
-          <RouterLink to="datatypes" getProps={isActive}>
+          <RouterLink to="/datatypes" getProps={isActive}>
             Data types
           </RouterLink>
         </LILinkItem>

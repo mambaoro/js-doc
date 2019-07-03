@@ -48,7 +48,7 @@ function Documentation({ location }) {
       <PoseGroup>
         <RoutesContainer key={location.pathname}>
           <Router location={location}>
-            <Introduction path="/introduction" default />
+            <Introduction path="/" default />
             <WhatYou path="/whatyou" />
             <JavaScriptJava path="/javascript-java" />
             <HelloWorld path="/hello-world" />

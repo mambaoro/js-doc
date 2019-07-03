@@ -28,7 +28,7 @@ export default function App() {
     <Fragment>
       <Router>
         <HomePage path="/">
-          <Introduction path="/introduction" />
+          <Introduction path="/" />
           <WhatYou path="/whatyou" />
           <JavaScriptJava path="/javascript-java" />
           <HelloWorld path="/hello-world" />
