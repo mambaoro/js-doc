@@ -8,26 +8,6 @@ import React from 'react';
 // import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-function GlobalVariables() {
-  return (
-    <Section>
-      <H1HeadingPrimary>Global variables</H1HeadingPrimary>
-      <Paragraph>
-        Global variables are in fact properties of the global object. In web
-        pages the global object is window, so you can set and access global
-        variables using the window.variable syntax.
-      </Paragraph>
-      <Paragraph>
-        Consequently, you can access global variables declared in one window or
-        frame from another window or frame by specifying the window or frame
-        name. For example, if a variable called phoneNumber is declared in a
-        document, you can refer to this variable from an iframe as
-        parent.phoneNumber.
-      </Paragraph>
-    </Section>
-  );
-}
-
 const Section = styled.section`
   font-size: 1.536rem;
   line-height: 1.5;
@@ -55,6 +35,26 @@ const Paragraph = styled.p`
     background-color: purple;
   }
 `;
+
+function GlobalVariables() {
+  return (
+    <Section>
+      <H1HeadingPrimary>Global variables</H1HeadingPrimary>
+      <Paragraph>
+        Global variables are in fact properties of the global object. In web
+        pages the global object is window, so you can set and access global
+        variables using the window.variable syntax.
+      </Paragraph>
+      <Paragraph>
+        Consequently, you can access global variables declared in one window or
+        frame from another window or frame by specifying the window or frame
+        name. For example, if a variable called phoneNumber is declared in a
+        document, you can refer to this variable from an iframe as
+        parent.phoneNumber.
+      </Paragraph>
+    </Section>
+  );
+}
 
 GlobalVariables.propTypes = {};
 

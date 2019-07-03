@@ -8,23 +8,6 @@ import React from 'react';
 // import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-function HelloWorld() {
-  return (
-    <Section>
-      <H1HeadingPrimary>Hello world</H1HeadingPrimary>
-      <Paragraph>
-        To get started with writing JavaScript, open the Scratchpad and write
-        your first &ldquo;Hello world&rdquo; JavaScript code:
-      </Paragraph>
-      <code>
-        function greetMe(yourName) &#123;alert(&apos;Hello &apos; +
-        yourName)&#125; <br />
-        greetMe(&ldquo;World&rdquo;);
-      </code>
-    </Section>
-  );
-}
-
 const Section = styled.section`
   font-size: 1.536rem;
   line-height: 1.5;
@@ -52,6 +35,23 @@ const Paragraph = styled.p`
     background-color: purple;
   }
 `;
+
+function HelloWorld() {
+  return (
+    <Section>
+      <H1HeadingPrimary>Hello world</H1HeadingPrimary>
+      <Paragraph>
+        To get started with writing JavaScript, open the Scratchpad and write
+        your first &ldquo;Hello world&rdquo; JavaScript code:
+      </Paragraph>
+      <code>
+        function greetMe(yourName) &#123;alert(&apos;Hello &apos; +
+        yourName)&#125; <br />
+        greetMe(&ldquo;World&rdquo;);
+      </code>
+    </Section>
+  );
+}
 
 HelloWorld.propTypes = {};
 
