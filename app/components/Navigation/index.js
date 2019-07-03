@@ -6,8 +6,9 @@
 
 import React from 'react';
 // import PropTypes from 'prop-types';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { Link } from '@reach/router';
+import { media, bp } from '../../base';
 
 function Navigation() {
   return (
@@ -69,12 +70,18 @@ function Navigation() {
   );
 }
 
+const css1Bp600 = css`
+  border: none;
+  margin: 0 auto;
+`;
+
 const NavContainer = styled.nav`
   font-size: 1.6rem;
   display: flex;
   flex-direction: column;
   border-right: 3px solid rgba(0, 22, 22, 0.4);
   min-width: 30rem;
+  ${media(css1Bp600, bp.bp600)}
 `;
 
 const H1HeadingPrimary = styled.h1`

@@ -6,7 +6,7 @@
 
 import React from 'react';
 // import PropTypes from 'prop-types';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { Router } from '@reach/router';
 import { createBrowserHistory } from 'history';
 import posed, { PoseGroup } from 'react-pose';
@@ -20,6 +20,7 @@ import VariableScope from '../VariableScope/Loadable';
 import GlobalVar from '../GlobalVariables/Loadable';
 import Constants from '../Constants/Loadable';
 import DataTypes from '../DataTypes/Loadable';
+import { media, bp } from '../../base';
 
 function Documentation() {
   const history = createBrowserHistory();
@@ -46,6 +47,11 @@ function Documentation() {
   );
 }
 
+const css1Bp600 = css`
+  margin: 3rem auto;
+  width: 95%;
+`;
+
 const RoutesContainer = posed.div({
   enter: {
     opacity: 1,
@@ -59,6 +65,7 @@ const RoutesContainer = posed.div({
 const DivDoc = styled.div`
   width: 100%;
   margin: 3rem;
+  ${media(css1Bp600, bp.bp600)}
 `;
 
 Documentation.propTypes = {};

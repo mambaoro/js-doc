@@ -1,14 +1,14 @@
 {
-  "name": "react-personal-boilerplate",
+  "name": "js-doc",
   "version": "",
-  "description": "Personal boilerplate",
+  "description": "JS documentation",
   "repository": {
     "type": "git",
-    "url": "git://github.com/react-boilerplate/react-boilerplate.git"
+    "url": "git://github.com/mambaoro/js-doc.git"
   },
   "engines": {
-    "npm": ">=5",
-    "node": ">=8.10.0"
+    "npm": "6.9.0",
+    "node": "12.3.1"
   },
   "author": "Mamadou Baoro",
   "license": "MIT",
@@ -63,33 +63,21 @@
     "@babel/polyfill": "^7.4.0",
     "@loadable/component": "^5.7.0",
     "@reach/router": "^1.2.1",
-    "apollo-boost": "^0.3.1",
-    "apollo-server": "^2.4.8",
-    "apollo-server-express": "^2.4.8",
-    "auth0-js": "^9.10.1",
     "chalk": "^2.4.2",
     "compression": "^1.7.4",
     "cors": "^2.8.5",
     "cross-env": "^5.2.0",
     "dotenv-webpack": "^1.7.0",
-    "env-cmd": "^8.0.2",
     "express": "^4.16.4",
     "fontfaceobserver": "^2.1.0",
-    "graphql": "^14.2.1",
-    "graphql-import": "^0.7.1",
     "history": "^4.9.0",
     "hoist-non-react-statics": "^3.3.0",
     "intl": "^1.2.5",
     "invariant": "^2.2.4",
     "ip": "^1.1.5",
-    "jsonwebtoken": "^8.5.1",
-    "jwks-rsa": "^1.4.0",
     "minimist": "^1.2.0",
-    "prisma": "^1.29.2",
-    "prisma-client-lib": "^1.30.1",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
-    "react-apollo": "^2.5.3",
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.0",
     "react-intl": "^2.8.0",
@@ -98,7 +86,6 @@
     "sanitize.css": "^8.0.0",
     "styled-components": "^4.2.0",
     "unstated": "^2.1.1",
-    "validator": "^10.11.0",
     "warning": "^4.0.3"
   },
   "devDependencies": {

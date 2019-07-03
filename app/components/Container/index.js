@@ -6,18 +6,14 @@
 
 import React from 'react';
 // import PropTypes from 'prop-types';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import Navigation from '../Navigation';
 import Documentation from '../Documentation';
+import { media, bp } from '../../base';
 
-function Container() {
-  return (
-    <DivContainer>
-      <Navigation />
-      <Documentation />
-    </DivContainer>
-  );
-}
+const css1Bp600 = css`
+  flex-direction: column;
+`;
 
 const DivContainer = styled.div`
   font-family: 'Open Sans', 'sans-serif';
@@ -27,7 +23,17 @@ const DivContainer = styled.div`
   code {
     color: #4d4e53;
   }
+  ${media(css1Bp600, bp.bp600)}
 `;
+
+function Container() {
+  return (
+    <DivContainer>
+      <Navigation />
+      <Documentation />
+    </DivContainer>
+  );
+}
 
 Container.propTypes = {};
 

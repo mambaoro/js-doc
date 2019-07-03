@@ -1,15 +1,13 @@
-// import { css } from 'styled-components';
+import { css } from 'styled-components';
 
-// const media = (content, breakpoint) => {
-//     return css`
-//         @media only screen and (max-width: ${breakpoint}) {
-//             ${content}
-//         }
-//     `;
-// }
+const media = (content, breakpoint) => css`
+  @media only screen and (max-width: ${breakpoint}) {
+    ${content}
+  }
+`;
 
-// const bp = {
-//     bp1200: '75em', // Example
-// };
+const bp = {
+  bp600: '37.5em', // 600px
+};
 
-// export { media, bp };
+export { media, bp };
