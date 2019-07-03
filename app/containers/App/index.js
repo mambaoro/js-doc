@@ -21,10 +21,6 @@ import VariableScope from '../../components/VariableScope/Loadable';
 import GlobalVar from '../../components/GlobalVariables/Loadable';
 import Constants from '../../components/Constants/Loadable';
 import DataTypes from '../../components/DataTypes/Loadable';
-import IfElse from '../../components/IfElse/Loadable';
-import While from '../../components/While/Loadable';
-import FunDeclaration from '../../components/FunctionDeclaration/Loadable';
-import Reference from '../../components/Reference/Loadable';
 
 import GlobalStyle from '../../global-styles';
 
@@ -43,10 +39,6 @@ export default function App() {
           <GlobalVar path="global-var" />
           <Constants path="constants" />
           <DataTypes path="datatypes" />
-          <IfElse path="ifelse" />
-          <While path="while" />
-          <FunDeclaration path="fun-declaration" />
-          <Reference path="reference" />
         </HomePage>
         <NotFoundPage default />
       </Router>
