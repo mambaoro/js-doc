@@ -51,7 +51,6 @@ function Documentation() {
       <PoseGroup>
         <RoutesContainer key={location}>
           <Router location={location}>
-            <Introduction path="/introduction" default />
             <WhatYou path="/whatyou" />
             <JavaScriptJava path="/javascript-java" />
             <HelloWorld path="/hello-world" />
@@ -61,6 +60,7 @@ function Documentation() {
             <GlobalVar path="/global-var" />
             <Constants path="/constants" />
             <DataTypes path="/datatypes" />
+            <Introduction path="/introduction" default />
           </Router>
         </RoutesContainer>
       </PoseGroup>
