@@ -10,16 +10,16 @@ import styled, { css } from 'styled-components';
 import { Router } from '@reach/router';
 import { createBrowserHistory } from 'history';
 import posed, { PoseGroup } from 'react-pose';
-import Introduction from '../Introduction/Loadable';
-import WhatYou from '../WhatYou/Loadable';
-import JavaScriptJava from '../JavaScriptJava/Loadable';
-import HelloWorld from '../HelloWorld/Loadable';
-import Variables from '../Variables/Loadable';
-import DeclaringVar from '../DeclaringVar/Loadable';
-import VariableScope from '../VariableScope/Loadable';
-import GlobalVar from '../GlobalVariables/Loadable';
-import Constants from '../Constants/Loadable';
-import DataTypes from '../DataTypes/Loadable';
+import Introduction from '../Introduction';
+import WhatYou from '../WhatYou';
+import JavaScriptJava from '../JavaScriptJava';
+import HelloWorld from '../HelloWorld';
+import Variables from '../Variables';
+import DeclaringVar from '../DeclaringVar';
+import VariableScope from '../VariableScope';
+import GlobalVar from '../GlobalVariables';
+import Constants from '../Constants';
+import DataTypes from '../DataTypes';
 import { media, bp } from '../../base';
 
 function Documentation() {

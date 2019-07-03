@@ -7,8 +7,8 @@
 import React from 'react';
 // import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
-import Navigation from '../Navigation';
-import Documentation from '../Documentation';
+import Navigation from '../Navigation/Loadable';
+import Documentation from '../Documentation/Loadable';
 import { media, bp } from '../../base';
 
 const css1Bp600 = css`
