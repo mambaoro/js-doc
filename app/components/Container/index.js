@@ -5,7 +5,7 @@
  */
 
 import React from 'react';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
 import Navigation from '../Navigation/Loadable';
 import Documentation from '../Documentation/Loadable';
@@ -26,15 +26,17 @@ const DivContainer = styled.div`
   ${media(css1Bp600, bp.bp600)}
 `;
 
-function Container() {
+function Container({ location }) {
   return (
     <DivContainer>
       <Navigation />
-      <Documentation />
+      <Documentation location={location} />
     </DivContainer>
   );
 }
 
-Container.propTypes = {};
+Container.propTypes = {
+  location: PropTypes.object,
+};
 
 export default Container;

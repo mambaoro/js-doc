@@ -5,10 +5,9 @@
  */
 
 import React from 'react';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
 import { Router } from '@reach/router';
-import { createBrowserHistory } from 'history';
 import posed, { PoseGroup } from 'react-pose';
 import Introduction from '../Introduction/Loadable';
 import WhatYou from '../WhatYou/Loadable';
@@ -43,13 +42,12 @@ const DivDoc = styled.div`
   ${media(css1Bp600, bp.bp600)}
 `;
 
-function Documentation() {
-  const history = createBrowserHistory();
-  const { location } = history;
+function Documentation({ location }) {
+  console.log(location);
   return (
     <DivDoc>
       <PoseGroup>
-        <RoutesContainer key={location}>
+        <RoutesContainer key={location.pathname}>
           <Router location={location}>
             <WhatYou path="/whatyou" />
             <JavaScriptJava path="/javascript-java" />
@@ -68,6 +66,8 @@ function Documentation() {
   );
 }
 
-Documentation.propTypes = {};
+Documentation.propTypes = {
+  location: PropTypes.object,
+};
 
 export default Documentation;
