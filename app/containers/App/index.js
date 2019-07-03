@@ -28,16 +28,16 @@ export default function App() {
     <Fragment>
       <Router>
         <HomePage path="/">
-          <Introduction path="introduction" />
-          <WhatYou path="whatyou" />
-          <JavaScriptJava path="javascript-java" />
-          <HelloWorld path="hello-world" />
-          <Variables path="variables" />
-          <DeclaringVar path="declaring-var" />
-          <VariableScope path="variable-scope" />
-          <GlobalVar path="global-var" />
-          <Constants path="constants" />
-          <DataTypes path="datatypes" />
+          <Introduction path="/introduction" />
+          <WhatYou path="/whatyou" />
+          <JavaScriptJava path="/javascript-java" />
+          <HelloWorld path="/hello-world" />
+          <Variables path="/variables" />
+          <DeclaringVar path="/declaring-var" />
+          <VariableScope path="/variable-scope" />
+          <GlobalVar path="/global-var" />
+          <Constants path="/constants" />
+          <DataTypes path="/datatypes" />
         </HomePage>
         <NotFoundPage default />
       </Router>

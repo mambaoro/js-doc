@@ -49,18 +49,18 @@ function Documentation() {
   return (
     <DivDoc>
       <PoseGroup>
-        <RoutesContainer key={location.pathname}>
+        <RoutesContainer key={location}>
           <Router location={location}>
-            <Introduction path="introduction" default />
-            <WhatYou path="whatyou" />
-            <JavaScriptJava path="javascript-java" />
-            <HelloWorld path="hello-world" />
-            <Variables path="variables" />
-            <DeclaringVar path="declaring-var" />
-            <VariableScope path="variable-scope" />
-            <GlobalVar path="global-var" />
-            <Constants path="constants" />
-            <DataTypes path="datatypes" />
+            <Introduction path="/introduction" default />
+            <WhatYou path="/whatyou" />
+            <JavaScriptJava path="/javascript-java" />
+            <HelloWorld path="/hello-world" />
+            <Variables path="/variables" />
+            <DeclaringVar path="/declaring-var" />
+            <VariableScope path="/variable-scope" />
+            <GlobalVar path="/global-var" />
+            <Constants path="/constants" />
+            <DataTypes path="/datatypes" />
           </Router>
         </RoutesContainer>
       </PoseGroup>
