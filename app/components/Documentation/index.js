@@ -10,17 +10,38 @@ import styled, { css } from 'styled-components';
 import { Router } from '@reach/router';
 import { createBrowserHistory } from 'history';
 import posed, { PoseGroup } from 'react-pose';
-import Introduction from '../Introduction';
-import WhatYou from '../WhatYou';
-import JavaScriptJava from '../JavaScriptJava';
-import HelloWorld from '../HelloWorld';
-import Variables from '../Variables';
-import DeclaringVar from '../DeclaringVar';
-import VariableScope from '../VariableScope';
-import GlobalVar from '../GlobalVariables';
-import Constants from '../Constants';
-import DataTypes from '../DataTypes';
+import Introduction from '../Introduction/Loadable';
+import WhatYou from '../WhatYou/Loadable';
+import JavaScriptJava from '../JavaScriptJava/Loadable';
+import HelloWorld from '../HelloWorld/Loadable';
+import Variables from '../Variables/Loadable';
+import DeclaringVar from '../DeclaringVar/Loadable';
+import VariableScope from '../VariableScope/Loadable';
+import GlobalVar from '../GlobalVariables/Loadable';
+import Constants from '../Constants/Loadable';
+import DataTypes from '../DataTypes/Loadable';
 import { media, bp } from '../../base';
+
+const css1Bp600 = css`
+  margin: 3rem auto;
+  width: 95%;
+`;
+
+const RoutesContainer = posed.div({
+  enter: {
+    opacity: 1,
+    delay: 100,
+    beforeChildren: true,
+    transition: { duration: 100 },
+  },
+  exit: { opacity: 0, transition: { duration: 50 } },
+});
+
+const DivDoc = styled.div`
+  width: 100%;
+  margin: 3rem;
+  ${media(css1Bp600, bp.bp600)}
+`;
 
 function Documentation() {
   const history = createBrowserHistory();
@@ -46,27 +67,6 @@ function Documentation() {
     </DivDoc>
   );
 }
-
-const css1Bp600 = css`
-  margin: 3rem auto;
-  width: 95%;
-`;
-
-const RoutesContainer = posed.div({
-  enter: {
-    opacity: 1,
-    delay: 100,
-    beforeChildren: true,
-    transition: { duration: 100 },
-  },
-  exit: { opacity: 0, transition: { duration: 50 } },
-});
-
-const DivDoc = styled.div`
-  width: 100%;
-  margin: 3rem;
-  ${media(css1Bp600, bp.bp600)}
-`;
 
 Documentation.propTypes = {};
 
