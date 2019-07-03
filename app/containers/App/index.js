@@ -21,7 +21,6 @@ import VariableScope from '../../components/VariableScope/Loadable';
 import GlobalVar from '../../components/GlobalVariables/Loadable';
 import Constants from '../../components/Constants/Loadable';
 import DataTypes from '../../components/DataTypes/Loadable';
-
 import GlobalStyle from '../../global-styles';
 
 export default function App() {
