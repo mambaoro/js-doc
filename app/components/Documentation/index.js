@@ -49,7 +49,7 @@ function Documentation() {
   return (
     <DivDoc>
       <PoseGroup>
-        <RoutesContainer key={location.pathname}>
+        <RoutesContainer key={location}>
           <Router location={location}>
             <Introduction path="introduction" default />
             <WhatYou path="whatyou" />
