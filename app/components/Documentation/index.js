@@ -43,12 +43,12 @@ const DivDoc = styled.div`
 `;
 
 function Documentation({ location }) {
-  console.log(location);
   return (
     <DivDoc>
       <PoseGroup>
         <RoutesContainer key={location.pathname}>
           <Router location={location}>
+            <Introduction path="/introduction" default />
             <WhatYou path="/whatyou" />
             <JavaScriptJava path="/javascript-java" />
             <HelloWorld path="/hello-world" />
@@ -58,7 +58,6 @@ function Documentation({ location }) {
             <GlobalVar path="/global-var" />
             <Constants path="/constants" />
             <DataTypes path="/datatypes" />
-            <Introduction path="/introduction" default />
           </Router>
         </RoutesContainer>
       </PoseGroup>
